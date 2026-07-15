@@ -10,7 +10,12 @@ export default defineConfig({
 				runes: ({ filename }) =>
 					filename.split(/[/\\]/).includes('node_modules') ? undefined : true
 			},
-			adapter: adapter()
+			adapter: adapter(),
+			alias: {
+				$components: 'src/components',
+				$scripts: 'src/scripts',
+				$models: 'src/models'
+			}
 		})
 	]
 });
