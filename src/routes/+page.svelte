@@ -25,22 +25,25 @@
 		</p>
 	</Block>
 	<Block>
-		<h4>Публикации</h4>
-		<div class="row w-100 row-cols-1 row-cols-xl-4 g-3">
-			{#each posts as [i, item]}
-				<div class="col">
-					<div class="bg-light bg-opacity-50 rounded h-100">
-						<div class="py-2 px-2">
-							<b>{item.title}</b>
-							<div>{item.description}</div>
+		<Column _class="gap-2">
+			<h4>Публикации</h4>
+			<div class="row w-100 row-cols-1 row-cols-xl-4 g-2">
+				{#each posts as [i, item]}
+					<div class="col">
+						<div class=" border-light border rounded h-100">
+							<div
+								class="rounded position-relative"
+								style="background-image: url({item.cover}); min-height: 11em; background-size:cover; background-position: center; background-repeat: no-repeat"
+							>
+								<div class="sticky-top w-100 px-2 py-1 bg-light bg-opacity-75">
+									<b>{item.title}</b>
+									<div>{item.description}</div>
+								</div>
+							</div>
 						</div>
-						<div
-							class="rounded-bottom"
-							style="background-image: url({item.cover}); min-height: 10em; background-size:cover; background-position: center; background-repeat: no-repeat"
-						></div>
 					</div>
-				</div>
-			{/each}
-		</div>
+				{/each}
+			</div>
+		</Column>
 	</Block>
 </Column>

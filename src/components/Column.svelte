@@ -7,9 +7,9 @@
 		_style?: string;
 	}
 
-	let { children, _class = 'd-flex flex-column gap-3', _style }: IPropse = $props();
+	let { children, _class = 'gap-3', _style }: IPropse = $props();
 </script>
 
-<div class={_class} style={_style}>
+<div class="d-flex flex-column {_class}" style={_style}>
 	{@render children?.()}
 </div>
