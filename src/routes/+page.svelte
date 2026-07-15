@@ -27,7 +27,13 @@
 	<Block>
 		<h1>Netlify проект</h1>
 		<p>
-			Visit <a href="https://svelte.dev/docs/kit">svelte.dev/docs/kit</a> to read the documentation
+			Prototype, test, and scale AI-powered experiences faster. Product teams can iterate with
+			agents while engineers productionize on the same platform.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima aut illum expedita ullam non
+			reprehenderit quidem veritatis molestias doloremque possimus cupiditate maiores rem explicabo
+			voluptatibus velit, ad modi doloribus iure!
 		</p>
 	</Block>
 
@@ -55,19 +61,21 @@
 	</Block>
 
 	<div>
-		<h4 class="px-1 mb-3">Публикации</h4>
-		<div class="row w-100 row-cols-1 row-cols-xl-4 g-3">
+		<div class="d-flex align-items-center ps-1 mb-3">
+			<h4 class="mb-0">Публикации</h4>
+			<div class="flex-grow-1 d-flex align-items-center justify-content-end">
+				<a class="btn btn-sm btn-dark text-light border-0" href="/posts/create"> Добавить </a>
+			</div>
+		</div>
+		<div class="row row-cols-1 row-cols-xl-4 g-3">
 			{#each posts as [i, item]}
 				<div class="col">
 					<div class=" border-light border rounded h-100">
 						<div
 							class="rounded position-relative"
-							style="background-image: url({item.cover}); min-height: 11.25em; background-size:cover; background-position: center; background-repeat: no-repeat"
+							style="background-image: url({item.cover}); min-height: 11.5em; background-size:cover; background-position: center; background-repeat: no-repeat"
 						>
-							<div
-								class="sticky-top w-100 bg-light bg-opacity-75"
-								style="padding:.43em .71em .43em .71em ;"
-							>
+							<div class="w-100 bg-light bg-opacity-75" style="padding:.43em .71em .43em .71em ;">
 								<b>{item.title}</b>
 								<div>{item.description}</div>
 							</div>
@@ -86,12 +94,9 @@
 					<div class=" border-light border rounded h-100">
 						<div
 							class="rounded position-relative"
-							style="background-image: url({item.photo}); min-height: 13.25em; background-size:cover; background-position: center; background-repeat: no-repeat"
+							style="background-image: url({item.photo}); min-height: 11.5em; background-size:cover; background-position: center; background-repeat: no-repeat"
 						>
-							<div
-								class="sticky-top w-100 bg-light bg-opacity-75"
-								style="padding:.43em .71em .43em .71em ;"
-							>
+							<div class="w-100 bg-light bg-opacity-75" style="padding:.43em .71em .43em .71em ;">
 								<b>{item.title}</b>
 								<div>{item.description}</div>
 							</div>

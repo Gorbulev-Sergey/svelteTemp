@@ -11,9 +11,9 @@
 
 <div class="sticky-top w-100 bg-light">
 	<div class="d-flex align-items-center px-lg-3 py-2">
-		<button class="btn btn-light bg-light text-dark border-0 text-uppercase">
+		<a class="btn btn-light bg-light text-dark border-0 text-uppercase" href="/">
 			<b>Netlify</b> проект
-		</button>
+		</a>
 	</div>
 </div>
 <div class="container my-3">
